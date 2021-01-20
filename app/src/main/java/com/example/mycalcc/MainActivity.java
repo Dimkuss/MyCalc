@@ -8,53 +8,43 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button one;
-    private Button two;
-    private Button three;
-    private Button four;
-    private Button five;
-    private Button six;
-    private Button seven;
-    private Button eight;
-    private Button nine;
-    private Button zero;
-    private Button dot;
-    private TextView mCalcView;
+    private boolean isUsual = true;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final View usual = findViewById(R.id.usualLayout);
+        final View unusual = findViewById(R.id.unusualLayout);
+        findViewById(R.id.ingenerBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isUsual){
+                    usual.setVisibility(View.INVISIBLE);
+                    unusual.setVisibility(View.VISIBLE);
+                    isUsual = false;
+                }
+
+            }
+        });
+        findViewById(R.id.ingenerBtn1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isUsual){
+                    unusual.setVisibility(View.GONE);
+                    usual.setVisibility(View.VISIBLE);
+
+                    isUsual = true;
+                }
+            }
+        });
+
         init();
     }
     private void  init (){
-    one = findViewById(R.id.oneBtn);
-        two = findViewById(R.id.twoBtn);
-        three = findViewById(R.id.threeBtn);
-        four = findViewById(R.id.fourBtn);
-        five = findViewById(R.id.fiveBtn);
-        six = findViewById(R.id.sixBtn);
-        seven = findViewById(R.id.sevenBtn);
-        eight = findViewById(R.id.eightBtn);
-        nine = findViewById(R.id.nineBtn);
-        zero = findViewById(R.id.zeroBtn);
-        dot = findViewById(R.id.dotBtn);
-        one.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-           mCalcView.setText(R.string.oneBtn);
-
-            }
-
-        });
-        two.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
 
-            }
 
-        });
     }
 }
