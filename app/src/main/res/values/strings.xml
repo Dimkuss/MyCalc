@@ -19,5 +19,13 @@
     <string name="minusBtn">-</string>
     <string name="multiplyBtn">*</string>
     <string name="equalBtn">=</string>
+    <string name="M">M</string>
+    <string name="O">O</string>
+    <string name="K">K</string>
+    <string name="H">H</string>
+    <string name="OO">O</string>
+    <string name="V">V</string>
+    <string name="I">♥</string>
+
 
 </resources>

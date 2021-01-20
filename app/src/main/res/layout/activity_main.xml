@@ -19,6 +19,91 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/M"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/O"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/K"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/H"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OO"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/V"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <LinearLayout
         android:id="@+id/buttonsC"
         android:layout_width="match_parent"
@@ -41,7 +126,7 @@
             android:layout_marginRight="4dp"
             android:textSize="30sp"
             android:layout_height="125dp"
-            android:layout_weight="1"
+            android:layout_weight="1.25"
             android:text="@string/plusMinBtn" />
 
         <Button
@@ -60,6 +145,16 @@
             android:layout_height="125dp"
             android:layout_weight="1"
             android:text="@string/divBtn" />
+        <Button
+            android:id="@+id/ingenerBtn"
+            android:layout_width="0dp"
+            android:layout_marginRight="4dp"
+            android:backgroundTint="@color/purple_700"
+            android:textSize="30sp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:text="@string/I" />
+
 
 
     </LinearLayout>
