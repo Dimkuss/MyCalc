@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isUsual){
-                    usual.setVisibility(View.INVISIBLE);
+                    usual.setVisibility(View.GONE);
                     unusual.setVisibility(View.VISIBLE);
                     isUsual = false;
                 }
